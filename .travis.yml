@@ -16,6 +16,8 @@ before_script:
 - wget -nv https://github.com/multiarch/qemu-user-static/releases/download/v3.1.0-3/qemu-aarch64-static
   -O qemu-aarch64-static
 - chmod +x qemu-aarch64-static
+- echo '{"experimental":true}' | sudo tee /etc/docker/daemon.json
+- sudo service docker restart
 script:
 - docker build --squash -t mydatakeeper/cross-archlinux .
 deploy:
