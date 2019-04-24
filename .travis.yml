@@ -19,11 +19,11 @@ before_script:
 - echo '{"experimental":true}' | sudo tee /etc/docker/daemon.json
 - sudo service docker restart
 script:
-- docker build --squash -t mydatakeeper/cross-archlinux .
+- docker build --squash -t mydatakeeper/aarch64-archlinux .
 deploy:
   provider: script
   script: echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-    && docker push mydatakeeper/archlinux
+    && docker push mydatakeeper/aarch64-archlinux
   on:
     branch: master
 env:
