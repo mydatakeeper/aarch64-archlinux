@@ -1,8 +1,8 @@
 FROM mydatakeeper/archlinux
 
 # Add aarch64 rootfs
-ADD ArchLinuxARM-aarch64-latest.tar.gz /usr/aarch64-linux-gnu/sysroot/aarch64/
-COPY qemu-aarch64-static /usr/aarch64-linux-gnu/sysroot/aarch64/usr/bin/qemu-aarch64-static
+ADD ArchLinuxARM-aarch64-latest.tar.gz /usr/aarch64-linux-gnu
+COPY qemu-aarch64-static /usr/aarch64-linux-gnu/usr/bin/qemu-aarch64-static
 
 # Add aarch64 cross-pacman tools
 COPY aarch64-pacman /usr/bin/aarch64-pacman
