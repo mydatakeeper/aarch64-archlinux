@@ -1,10 +1,10 @@
 #
 # Arch Linux ARM repository mirrorlist
-# Generated on 2018-09-03
+# Generated on 2020-02-11
 #
 
 ## Geo-IP based mirror selection and load balancing
-Server = http://mirror.archlinuxarm.org/$arch/$repo
+# Server = http://mirror.archlinuxarm.org/$arch/$repo
 
 ### Mirrors by country
 
@@ -20,22 +20,16 @@ Server = http://mirror.archlinuxarm.org/$arch/$repo
 ## Aalborg
 # Server = http://dk.mirror.archlinuxarm.org/$arch/$repo
 
-### France
-## Ain
-# Server = http://fr.mirror.archlinuxarm.org/$arch/$repo
-
 ### Germany
 ## Aachen
-# Server = http://de3.mirror.archlinuxarm.org/$arch/$repo
+Server = http://de3.mirror.archlinuxarm.org/$arch/$repo
 ## Berlin
-# Server = http://de.mirror.archlinuxarm.org/$arch/$repo
+Server = http://de.mirror.archlinuxarm.org/$arch/$repo
 ## Coburg
-# Server = http://de4.mirror.archlinuxarm.org/$arch/$repo
+Server = http://de4.mirror.archlinuxarm.org/$arch/$repo
 ## Falkenstein
-# Server = http://de5.mirror.archlinuxarm.org/$arch/$repo
-# Server = http://de6.mirror.archlinuxarm.org/$arch/$repo
-## Nuremberg
-# Server = http://eu.mirror.archlinuxarm.org/$arch/$repo
+Server = http://eu.mirror.archlinuxarm.org/$arch/$repo
+Server = http://de5.mirror.archlinuxarm.org/$arch/$repo
 
 ### Greece
 ## Athens
@@ -49,9 +43,9 @@ Server = http://mirror.archlinuxarm.org/$arch/$repo
 ## Amsterdam
 # Server = http://nl.mirror.archlinuxarm.org/$arch/$repo
 
-### Russia
-## Moscow
-# Server = http://ru.mirror.archlinuxarm.org/$arch/$repo
+### Portugal
+## Aveiro
+# Server = http://pt.mirror.archlinuxarm.org/$arch/$repo
 
 ### Singapore
 # Server = http://sg.mirror.archlinuxarm.org/$arch/$repo
